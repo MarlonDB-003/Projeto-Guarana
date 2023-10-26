@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Variáveis responsáveis pelas cores da página*/
+:root {
+    --bg-color: #fff;
+    --second-bg-color: #62f863;
+    --text-color: #000;
+    --main-color: #0dca27;
+}
+/*estilização da tag html*/
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+/*estilização do body da página*/
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+/*estilização das section da pagina*/
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.divider-1 {
+    /*estilização da linha que divide cada seção da página*/
+    height: 2px;
+    background: var(--main-color);
+}
+/*estilização dos header de cada seção*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+/*estilização do logo da pagina*/
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+/*estilização do menu da página*/
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+/*quando o menu estiver em destaque*/
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+    margin-left: 2rem;
+    width: 35vw;
+    border-radius: 1rem;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.home-content h3 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.home-content h1 {
+    text-align: center;
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-color);
+}
+
+.about-img img {
+    border-radius: 2rem;
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 2rem 0 3rem;
+}
+
+/*********Festa****************/
+.festa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-color);
+}
+
+.festa-img img {
+    border-radius: 2rem;
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.festa-content {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.festa-content h3 {
+    font-size: 2.6rem;
+}
+
+.festa-content p {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 2rem 0 3rem;
+}
+
+/*********Guarana****************/
+.guarana {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-color);
+}
+
+.guarana-img img {
+    border-radius: 2rem;
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.guarana-content {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.guarana-content h3 {
+    font-size: 2.6rem;
+}
+
+.guarana-content p {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 2rem 0 3rem;
+}
+
+/*********Economia****************/
+.economia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-color);
+}
+
+.economia-img img {
+    border-radius: 2rem;
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.economia-content {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.economia-content p {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 2rem 0 3rem;
+}
+
+/*********Beneficios****************/
+.beneficios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-color);
+}
+
+.beneficios-img img {
+    border-radius: 2rem;
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.beneficios-content {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.beneficios-content p {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 2rem 0 3rem;
+}
+
+/*********Culinária****************/
+.culinaria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-color);
+}
+
+.culinaria-img img {
+    border-radius: 2rem;
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.culinaria-content {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.culinaria-content p {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 2rem 0 3rem;
+}
+
+/*********Preservação****************/
+.preservacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-color);
+}
+
+.preservacao-img img {
+    border-radius: 2rem;
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.preservacao-content {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.preservacao-content p {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 2rem 0 3rem;
+}
+
+/*********Impacto****************/
+.impacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--bg-color);
+}
+
+.impacto-img img {
+    border-radius: 2rem;
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.impacto-content {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.impacto-content p {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 2rem 0 3rem;
+}
+
+/*********Footer****************/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background-color: var(--bg-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
+
+
+/* BREAKPOINTS*/
+
+@media(max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+    section {
+        padding: 10rem 3% 2rem;
+    }
+    .about {
+        padding-bottom: 7rem;
+    }
+    .guanara {
+        padding-bottom: 7rem;
+    }
+    .economia {
+        padding-bottom: 7rem;
+    }
+    .festa {
+        padding-bottom: 7rem;
+    }
+    .beneficios {
+        padding-bottom: 7rem;
+    }
+    .culinaria {
+        padding-bottom: 7rem;
+    }
+    .preservacao {
+        padding-bottom: 7rem;
+    }
+    .impacto {
+        padding-bottom: 7rem;
+    }     
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media(max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+    .navbar.active {
+        display: block;
+    }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home {
+        flex-direction: column;
+    }
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about {
+        flex-direction: column-reverse;
+    }
+    .about img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .guarana {
+        flex-direction: column-reverse;
+    }
+    .guanara img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .economia {
+        flex-direction: column-reverse;
+    }
+    .economia img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .festa {
+        flex-direction: column-reverse;
+    }
+    .festa img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .beneficios {
+        flex-direction: column-reverse;
+    }
+    .beneficios img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .culinaria {
+        flex-direction: column-reverse;
+    }
+    .culinaria img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .preservacao {
+        flex-direction: column-reverse;
+    }
+    .preservacao img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .impacto {
+        flex-direction: column-reverse;
+    }
+    .impacto img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 365px) {
+    .home-img img {
+        width: 90vw;
+    }
+    .about-img img {
+        width: 90vw;
+    }
+    .guarana-img img {
+        width: 90vw;
+    }
+    .festa-img img {
+        width: 90vw;
+    }
+    .economia-img img {
+        width: 90vw;
+    }
+    .beneficios-img img {
+        width: 90vw;
+    }
+    .culinaria-img img {
+        width: 90vw;
+    }
+    .preservacao-img img {
+        width: 90vw;
+    }
+    .impacto-img img {
+        width: 90vw;
+    }
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
