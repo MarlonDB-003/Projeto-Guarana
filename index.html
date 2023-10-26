@@ -1,3 +1,10 @@
+<!-- Os códigos das tags HTML funcionam da seguinte forma: 
+        o section são as secões das páginas, temos um total de 8 section:
+        Origem, sobre, economia, festa, benefícios, culinárias, preservação e impacto
+        todas bem divididas e identificadas no decorrer desse arquivo index.
+        o nome index do arquivo foi escolhido por causa das boas práticas
+        geralmente, em projetos web, a página inicial se chama index. -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,12 +23,13 @@
 
 <body>
     <!-- header design -->
+    <!-- menu da página, onde são exibidas as seções. -->
 
     <header class="header">
         <a href="#home" class="logo">Mau<span>és</span></a>
 
         <i class="bx bx-menu" id="menu-icon"></i>
-
+        <!-- O active indica onde será o destaque na inicialização da página, no caso, sempre se iniciará na seção home -->
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">Origem</a>
@@ -36,7 +44,13 @@
     </header>
 
     <!-- home section design -->
-
+    <!-- essa possui as seguintes tags: h1, onde fica o nome da cidade, h3, onde ficam alguns texto descritivos e a tag p, onde vem os demais textos da página -->
+    <!-- em relação ao css, cada uma dessas classes estão no arquivo style.css, onde vem mostrando sua estilização. -->
+    <!-- vale ressaltar que toda á página possui uma formatação padrão, então explicar toda ela ficara repetitiva e cansativa -->
+    <!-- então, daremos enfase na página inicial, e as demais seguirão os mesmos padrões, mudando apenas os nomes das suas classes e id -->
+    <!-- aqui os nomes das classes são home, home-content e multiples-text, que é uma estilização utilizada na função javaScript -->
+    <!-- essa função javaScript é responsável por fazer os textos dessa tag h3 serem "digitados" constantemente na tela, causando um efeito de surgimento e desaparecimento -->
+    <!-- a tag /br é utilizada para fazer uma quebra de linha -->
     <section class="home" id="home">
         <div class="home-content">
             <h3>Seja bem-vindo a</h3>
@@ -53,10 +67,16 @@
         </div>
     </section>
 
+    <!-- onde estiver essa classe divider-1, significa que há uma linha verde dividindo uma seção da outra -->
+    <!-- mais uma vez, foque nisso apenas uma vez, pois ela aparecerá constantemente  na página e repetir ela toda vez na explicação se tornará cansativo e repetitivo-->
     <div class="divider-1"></div>
 
     <!-- about section design -->
 
+    <!-- seção sobre da página, onde temos as tags about, about-img, about-content e heiding -->
+    <!-- todas as outras classes seguem esse padrão -->
+    <!-- a classe heiding segue o mesmo padrão de nome em todas as outras seções -->
+    <!-- todas as classes e id foram estilizadas no arquivo style.css -->
     <section class="about" id="about">
         <div class="about-img">
             <img src="images/guaraná_3.jpg" alt="imagem do guaraná">
@@ -87,6 +107,10 @@
 
     
     <!-- Guaraná -->
+    <!-- seção sobre da página, onde temos as tags guarana, guarana-img, guarana-content e heiding -->
+    <!-- todas as outras classes seguem esse padrão -->
+    <!-- a classe heiding segue o mesmo padrão de nome em todas as outras seções -->
+    <!-- todas as classes e id foram estilizadas no arquivo style.css -->
     <section class="guarana" id="guarana">
         <div class="guarana-img">
             <img src="images/guaraná_2.jpg" alt>
@@ -117,14 +141,18 @@
 
     <div class="divider-1"></div>
 
-    <!-- Festa -->
+    <!-- Economia -->
+    <!-- seção sobre da página, onde temos as tags economia, economia-img, economia-content e heiding -->
+    <!-- todas as outras classes seguem esse padrão -->
+    <!-- a classe heiding segue o mesmo padrão de nome em todas as outras seções -->
+    <!-- todas as classes e id foram estilizadas no arquivo style.css -->
     <section class="economia" id="economia">
         <div class="economia-img">
             <img src="images/economia.png" alt>
         </div>
 
         <div class="economia-content">
-            <h2 class="heading"><span>Importância Economica</span></h2>
+            <h2 class="heading"><span>Importância Econômica</span></h2>
             <p>
                 O guaraná tem uma importância econômica significativa para o município de Maués.</br> 
                 A produção de guaraná em Maués cria empregos diretos e indiretos. Isso inclui trabalhadores nas plantações, na colheita, no processamento, na embalagem, no transporte e na distribuição. 
@@ -139,6 +167,10 @@
     <div class="divider-1"></div>
 
     <!-- Festa -->
+    <!-- seção sobre da página, onde temos as tags festa, festa-img, festa-content e heiding -->
+    <!-- todas as outras classes seguem esse padrão -->
+    <!-- a classe heiding segue o mesmo padrão de nome em todas as outras seções -->
+    <!-- todas as classes e id foram estilizadas no arquivo style.css -->
     <section class="festa" id="festa">
         <div class="festa-img">
             <img src="images/festa_do_guaraná.png" alt>
@@ -157,6 +189,10 @@
     <div class="divider-1"></div>
 
     <!-- Benefícios -->
+    <!-- seção sobre da página, onde temos as tags beneficios, beneficios-img, beneficios-content e heiding -->
+    <!-- todas as outras classes seguem esse padrão -->
+    <!-- a classe heiding segue o mesmo padrão de nome em todas as outras seções -->
+    <!-- todas as classes e id foram estilizadas no arquivo style.css -->
     <section class="beneficios" id="beneficios">
         <div class="beneficios-img">
             <img src="images/beneficios.jpg" alt>
@@ -179,6 +215,10 @@
     <div class="divider-1"></div>
 
     <!-- Culinária -->
+    <!-- seção sobre da página, onde temos as tags culinaria, culinaria-img, culinaria-content e heiding -->
+    <!-- todas as outras classes seguem esse padrão -->
+    <!-- a classe heiding segue o mesmo padrão de nome em todas as outras seções -->
+    <!-- todas as classes e id foram estilizadas no arquivo style.css -->   
     <section class="culinaria" id="culinaria">
         <div class="culinaria-img">
             <img src="images/culinaria.png" alt>
@@ -206,6 +246,10 @@
     <div class="divider-1"></div>
 
     <!-- Preservação -->
+    <!-- seção sobre da página, onde temos as tags preservacao, preservacao-img, preservacao-content e heiding -->
+    <!-- todas as outras classes seguem esse padrão -->
+    <!-- a classe heiding segue o mesmo padrão de nome em todas as outras seções -->
+    <!-- todas as classes e id foram estilizadas no arquivo style.css -->  
     <section class="preservacao" id="preservacao">
         <div class="preservacao-img">
             <img src="images/preservacao.jpg" alt>
@@ -229,6 +273,10 @@
     <div class="divider-1"></div>
 
     <!-- Impacto Social -->
+    <!-- seção sobre da página, onde temos as tags impacto, impacto-img, impacto-content e heiding -->
+    <!-- todas as outras classes seguem esse padrão -->
+    <!-- a classe heiding segue o mesmo padrão de nome em todas as outras seções -->
+    <!-- todas as classes e id foram estilizadas no arquivo style.css -->  
     <section class="impacto" id="impacto">
         <div class="preservacao-img">
             <img src="images/impacto_social.jpg" alt>
@@ -251,17 +299,21 @@
 
 
     <!-- footer design -->
+    <!-- está seção é o rodapé dá pagina, que é exibida apenas no final de todas as seções -->
     <footer class="footer">
         <div class="footer-tex">
             <p>Copyright &copy; 2023 dev | All Right Reserved</p>
         </div>
-
+        <!-- Um botão que, quando clicado, irá para o topo da página -->
         <div class="footer-iconTop">
             <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
         </div>
     </footer>
 
-    <!-- scroll reveal -->
+    <!-- esses ultimos arquivos são importações de arquivos externos -->
+    <!-- esses aquivos são utilizadas para auxiliar no scroll de rolagem da página, alem de ajudar no destaque de cada seção no menu da página -->
+    <!-- por exemplo, se estiver na seção economia, ela estará em destaque no menu da página -->
+    <!-- scroll reveal -->  
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- typed js -->
